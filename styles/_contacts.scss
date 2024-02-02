@@ -1,0 +1,119 @@
+.contact {
+    width: 100%;
+    height: 632px;
+    background-color: $neutral-50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.contact .title {
+    width: 100%;
+    height: 206px;
+    padding: 60px 0 38px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .subtitle {
+        @include subtitle;
+    }
+
+    .descri {
+        width: 539px;
+        height: 46px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 23.46px;
+        color: $neutral-600;
+    }
+
+}
+
+.contact .form {
+    width: 592px;
+    height: 257px;
+    display: grid;
+    grid-template-columns: 280px 32px 280px;
+    grid-template-rows: 41px 41px 135px;
+    row-gap: 20px;
+
+    .input {
+        background-color: $white;
+        border: solid 1px $neutral-100;
+        padding: 10px 8px;
+        border-radius: 4px;
+        outline: none;
+
+    }
+
+
+    .name {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .email {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .reason-cont {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        @include container-spc;
+        background-color: $white;
+        border: solid 1px $neutral-100;
+        padding: 0 8px;
+        border-radius: 4px;
+
+        .input {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+
+
+    }
+
+    .number {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .message {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+}
+
+.contact .notif {
+    display: flex;
+    width: 592px;
+
+    .star {
+        color: $red;
+    }
+
+    color: $neutral-500;
+    margin: 8px 0 0 0;
+}
+
+.contact .btn-submit {
+    width: 271px;
+    @include cont-cc();
+    border-radius: 2px;
+    padding: 16px 20px;
+    background-color: $primary;
+    color: $white;
+    text-decoration: none;
+    margin-top: 28px;
+}

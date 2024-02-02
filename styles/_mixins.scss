@@ -1,0 +1,22 @@
+@mixin container-spc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@mixin cont-cc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42.23px;
+    color: $Neutral-800;
+    text-transform: capitalize;
+
+}
